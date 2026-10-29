@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akumar Distributor - Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 30px; background-color: #f4f4f9; color: #333; }
+        .container { background: white; padding: 25px; border-radius: 12px; display: inline-block; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); width: 85%; max-width: 360px; text-align: left; }
+        h2 { text-align: center; color: #0288d1; margin-bottom: 5px; font-size: 22px; }
+        .merchant-title { text-align: center; font-weight: bold; color: #555; margin-bottom: 20px; font-size: 16px; text-transform: lowercase; }
+        
+        /* डिस्काउंट कूपन बॉक्स */
+        .coupon-box { background: #fff8e1; border: 1px dashed #ffb300; padding: 12px; border-radius: 6px; margin-bottom: 15px; }
+        .coupon-title { font-weight: bold; font-size: 14px; color: #b78103; margin-bottom: 5px; }
+        
+        /* कैशबैक कूपन बॉक्स */
+        .cashback-box { background: #e8f5e9; border: 1px dashed #4caf50; padding: 12px; border-radius: 6px; margin-bottom: 15px; }
+        .cashback-title { font-weight: bold; font-size: 14px; color: #2e7d32; margin-bottom: 5px; }
+        
+        .desc-text { font-size: 13px; color: #555; }
+        
+        /* भुगतान बॉक्स */
+        .pay-box { background: #e1f5fe; padding: 15px; border-radius: 8px; border: 1px solid #b3e5fc; margin-top: 20px; text-align: center; }
+        .amount-text { font-size: 18px; font-weight: bold; color: #01579b; margin-bottom: 10px; }
+        .btn { display: block; padding: 14px 20px; background-color: #0288d1; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        .btn:active { background-color: #01579b; }
+        .info-tag { font-size: 11px; color: #888; text-align: center; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Dr. Prasad Layout</h2>
+    <div class="merchant-title">akumar distributor</div>
+    
+    <!-- 1. ₹10 डिस्काउंट कूपन -->
+    <div class="coupon-box">
+        <div class="coupon-title">🏷️ डिस्काउंट कूपन: DIST10</div>
+        <div class="desc-text">इस कूपन से आपको बिल राशि पर ₹10 की तुरंत छूट मिलती है।</div>
+    </div>
+
+    <!-- 2. ₹10 कैशबैक कूपन फ्री -->
+    <div class="cashback-box">
+        <div class="cashback-title">🎁 कैशबैक कूपन (मुफ़्त): CASH10</div>
+        <div class="desc-text">सफल भुगतान के बाद आपके वॉलेट में ₹10 का कैशबैक जोड़ा जाएगा।</div>
+    </div>
+
+    <!-- भुगतान बॉक्स (₹10 लाइव टेस्ट) -->
+    <div class="pay-box">
+        <div class="amount-text">कुल देय राशि: ₹10.00</div>
+        
+        <!-- नया अपडेटेड डायरेक्ट पेमेंट बटन -->
+        <a class="btn" href="upi://pay?pa=8924030267@upi&pn=akumar%20distributor&tn=Live%20Test%20Payment&am=10.00&cu=INR">
+            ₹10 पे करें (0% Fees)
+        </a>
+    </div>
+
+    <div class="info-tag">सुरक्षित डायरेक्ट बैंक-टू-बैंक ट्रांसफर (NPCI)</div>
+</div>
+
+</body>
+</html>
+
